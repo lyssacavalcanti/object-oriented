@@ -13,6 +13,12 @@ class  ContaCorrente {
              this.saldo -= valor;
          }
      }
+
+    depositar(valor){
+        if(valor > 0) {
+            this.saldo += valor; 
+        }
+    }
 }
 
 // Use the Class Cliente to create a new register of client inside a const.
@@ -28,10 +34,7 @@ const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.agencia = 1001;
 contaCorrenteRicardo.saldo = 0;
 
-console.log(contaCorrenteRicardo.saldo);
 contaCorrenteRicardo.saldo = 100;
-console.log(contaCorrenteRicardo.saldo);
 contaCorrenteRicardo.sacar(50);
+
 console.log(contaCorrenteRicardo.saldo);
-console.log(cliente1);
-console.log(cliente2);
